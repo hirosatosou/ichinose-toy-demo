@@ -165,7 +165,7 @@ a{color:inherit}
     linear-gradient(180deg,#fff0f5 0%,#fff8ef 48%,#eafaf4 100%);}
 .hero-shelf .topwrap{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.04fr .96fr;gap:34px;align-items:center}
 .hero-shelf .hlogo{display:grid;place-items:center}
-.hero-shelf h1{font-family:"Zen Maru Gothic",sans-serif;font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.34;margin:.1em 0 .3em;letter-spacing:.01em}
+.hero-shelf h1{font-family:"Zen Maru Gothic",sans-serif;font-size:clamp(1.4rem,3.4vw,2.2rem);line-height:1.3;margin:.1em 0 .3em;letter-spacing:.01em;white-space:nowrap}
 .hero-shelf h1 .a{color:var(--red)} .hero-shelf h1 .b{color:var(--teal)}
 .hero-shelf .lead{font-size:1.04rem;color:#6a574e;font-weight:600;margin:0 0 16px}
 .hero-shelf .hero-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-start;margin:0 0 16px}
@@ -207,6 +207,7 @@ a{color:inherit}
 .sc-star6{top:62%;right:24%;width:18px}
 @media(max-width:880px){
   .hero-shelf{text-align:center}
+  .hero-shelf h1{white-space:normal;font-size:clamp(1.4rem,5.5vw,2rem)}
   .hero-shelf .topwrap{grid-template-columns:1fr;gap:16px}
   .hero-shelf .hero-badges,.hero-shelf .cta{justify-content:center}
   .hero-shelf .sc-star3,.hero-shelf .sc-star4,.hero-shelf .sc-star6,.hero-shelf .sc-heli{display:none}
