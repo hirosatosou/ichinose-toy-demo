@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ｜おもちゃのイチノセ（山梨県中央市）</title>
+<meta name="description" content="おもちゃのイチノセへのお問い合わせ。商品の在庫・お取り寄せ、法人購入のご相談など、お電話・メール・フォームからお気軽にどうぞ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-banner">これはリニューアル提案用のデモ画面です（おもちゃのイチノセ様）／フォームはデモのため送信されません</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand zen" href="index.html"><img src="assets/logo_header.png" alt="おもちゃのイチノセ ICHINOSE Happy Toy &amp; Hobby"></a>
+    <button class="navtoggle" aria-label="メニュー" onclick="document.getElementById('gnav').classList.toggle('open')"><span></span></button>
+    <nav class="gnav zen" id="gnav">
+      <a href="index.html">トップ</a>
+      <a href="products.html">商品案内</a>
+      <a href="guide.html">ご利用案内</a>
+      <a href="blog.html">ブログ</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a class="tel" href="tel:0552732270"><small>お電話はこちら</small><b>055-273-2270</b></a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">トップ</a> ＞ お問い合わせ</p>
+    <h1 class="zen">お問い合わせ</h1>
+    <p>商品の在庫・お取り寄せ、法人購入のご相談など、お気軽にどうぞ。</p>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap" style="display:grid;grid-template-columns:1.3fr .9fr;gap:30px;align-items:start">
+    <form class="form zen" onsubmit="alert('デモ画面のため送信は行いません。実際の公開時にはメール送信が有効になります。');return false;">
+      <div>
+        <label>お名前 <span class="req">必須</span></label>
+        <input type="text" name="name" placeholder="山梨 太郎" required>
+      </div>
+      <div>
+        <label>メールアドレス <span class="req">必須</span></label>
+        <input type="email" name="email" placeholder="example@mail.com" required>
+      </div>
+      <div>
+        <label>電話番号</label>
+        <input type="tel" name="tel" placeholder="055-000-0000">
+      </div>
+      <div>
+        <label>お問い合わせ種別</label>
+        <select name="type">
+          <option>商品の在庫・お取り寄せについて</option>
+          <option>カードゲーム大会・デュエルスペースについて</option>
+          <option>ポイントカードについて</option>
+          <option>法人でのご購入について</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div>
+        <label>お問い合わせ内容 <span class="req">必須</span></label>
+        <textarea name="body" rows="6" placeholder="お探しの商品名やご相談内容をご記入ください。" required></textarea>
+      </div>
+      <div><button class="btn lg" type="submit">この内容で送信する</button></div>
+      <p class="note">※ お急ぎの場合はお電話（055-273-2270）が確実です。</p>
+    </form>
+
+    <div>
+      <div class="infocard zen" style="margin-bottom:20px">
+        <h3>お電話・メール</h3>
+        <dl class="dl">
+          <dt>電話</dt><dd><a href="tel:0552732270">055-273-2270</a></dd>
+          <dt>FAX</dt><dd>055-273-2135</dd>
+          <dt>Mail</dt><dd><a href="mailto:ichinose.toys@violet.plala.or.jp">ichinose.toys@violet.plala.or.jp</a></dd>
+          <dt>営業</dt><dd>月〜木 10:00–19:00／金土日祝 10:00–20:00</dd>
+          <dt>定休</dt><dd>第2・第3 火曜日（8月・12月は無休）</dd>
+        </dl>
+      </div>
+      <div class="map" style="border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line)">
+        <iframe title="おもちゃのイチノセ 地図" loading="lazy" style="width:100%;height:260px;border:0;display:block" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=%E5%B1%B1%E6%A2%A8%E7%9C%8C%E4%B8%AD%E5%A4%AE%E5%B8%82%E8%A5%BF%E8%8A%B1%E8%BC%AA3508&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand zen footer-logo" href="index.html"><img src="assets/logo_center.png" alt="おもちゃのイチノセ ICHINOSE Happy Toy &amp; Hobby"></a>
+        <p>〒409-3843 山梨県中央市西花輪3508<br>TEL 055-273-2270／FAX 055-273-2135<br>E-mail：ichinose.toys@violet.plala.or.jp</p>
+      </div>
+      <div><h4 class="zen">メニュー</h4><ul><li><a href="index.html">トップ</a></li><li><a href="products.html">商品案内</a></li><li><a href="guide.html">ご利用案内・店舗情報</a></li><li><a href="blog.html">ブログ</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div>
+      <div><h4 class="zen">商品カテゴリ</h4><ul><li><a href="products.html#boy">男の子のおもちゃ</a></li><li><a href="products.html#girl">女の子のおもちゃ</a></li><li><a href="products.html#baby">ベビー・知育玩具</a></li><li><a href="products.html#hobby">ホビー・カード</a></li><li><a href="products.html#tv">テレビゲーム</a></li><li><a href="products.html#variety">バラエティ・パズル</a></li></ul></div>
+    </div>
+    <p class="copy">© 2026 おもちゃのイチノセ（ICHINOSE - Happy Toy &amp; Hobby）</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="ページの先頭へ戻る" onclick="window.scrollTo({top:0,behavior:'smooth'})"><img src="assets/deco/rocket.png" alt=""></button>
+<script>(function(){var b=document.getElementById('totop');if(b)addEventListener('scroll',function(){b.classList.toggle('show',scrollY>400)});})();</script>
+</body>
+</html>
